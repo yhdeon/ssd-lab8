@@ -35,6 +35,12 @@ jobs:
       - name: Debug ESLint Output
         run: cat reports/eslint-results.sarif || echo "No SARIF report generated"
 
+      - name: Show event info
+        run: |
+          echo "Repo: ${{ github.repository }}"
+          echo "Event repo: ${{ github.event.repository.full_name }}"
+          echo "Is fork: ${{ github.event.pull_request.head.repo.fork }}"
+
       - name: Upload SARIF report
         uses: github/codeql-action/upload-sarif@v3
         with:
