@@ -10,6 +10,12 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
+      - name: Dump GitHub event context
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event JSON:"
+          echo "${{ toJson(github.event) }}"
+
       - name: Checkout Code
         uses: actions/checkout@v4
 
