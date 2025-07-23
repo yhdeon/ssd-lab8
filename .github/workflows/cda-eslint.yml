@@ -2,12 +2,14 @@ name: ESLint Code Analysis
 
 on: [push, pull_request]
 
-permissions:
-  contents: read
-  security-events: write
+
 
 jobs:
   eslint:
+    permissions:
+      contents: read
+      security-events: write
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
