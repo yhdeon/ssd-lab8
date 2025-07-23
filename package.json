@@ -1,0 +1,25 @@
+{
+  "name": "lab08-requiredfiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhdeon/ssd-lab8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhdeon/ssd-lab8/issues"
+  },
+  "homepage": "https://github.com/yhdeon/ssd-lab8#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0"
+  }
+}
